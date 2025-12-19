@@ -224,36 +224,50 @@
   .footer:hover span {
     color: #6366f1;
   }
+
 /* =====================
-   RESPONSIVE (MOBILE)
+   NAVBAR MOBILE FIX
 ===================== */
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
-
-  /* NAVBAR */
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
-    padding: 12px 16px;
-  }
-
-  .logo {
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
   }
 
   .nav-links {
+    position: absolute;
+    top: 64px;
+    left: 0;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    background: #ffffff;
+    display: none;
+    flex-direction: column;
     gap: 8px;
-    flex-wrap: wrap;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e7eb;
   }
 
   .nav-links a {
-    padding: 6px 12px;
-    font-size: 0.85rem;
-    border-radius: 999px;
+    padding: 10px 16px;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links.show {
+    display: flex;
   }
 }
