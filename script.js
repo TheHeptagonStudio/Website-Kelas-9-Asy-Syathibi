@@ -247,4 +247,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function goToLink(url) {
     window.open(url, "_blank");
   }
-  
+
+  function toggleMenu() {
+  document.getElementById("navMenu").classList.toggle("show");
+}
