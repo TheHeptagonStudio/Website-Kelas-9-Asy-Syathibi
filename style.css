@@ -224,4 +224,64 @@
   .footer:hover span {
     color: #6366f1;
   }
-  
+* =====================
+   RESPONSIVE (MOBILE)
+===================== */
+@media (max-width: 768px) {
+
+  body {
+    padding: 0 12px;
+  }
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-links a {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  /* SECTION */
+  .section {
+    padding: 40px 16px;
+  }
+
+  /* MEMBER GRID */
+  .member-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  /* MEMBER CARD */
+  .member-card img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .member-card h3 {
+    font-size: 0.95rem;
+  }
+
+  .member-card span {
+    font-size: 0.8rem;
+  }
+
+  /* FOOTER */
+  .footer-class {
+    padding: 24px 12px;
+  }
+
+  .footer-creator {
+    font-size: 0.75rem;
+  }
+}
