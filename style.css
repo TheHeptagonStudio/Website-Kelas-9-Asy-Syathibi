@@ -227,7 +227,7 @@
 /* =====================
    RESPONSIVE (MOBILE)
 ===================== */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
 
     body {
       padding: 0 12px;
@@ -241,9 +241,10 @@
     }
   
     .nav-links {
+      flex-wrap: wrap;
+      gap: 8px;
       width: 100%;
-      display: flex;
-      justify-content: space-between;
+      justify-content: center;
     }
   
     .nav-links a {
@@ -258,7 +259,7 @@
   
     /* MEMBER GRID */
     .member-grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr;
       gap: 16px;
     }
   
@@ -285,4 +286,5 @@
       font-size: 0.75rem;
     }
   }
+
     
