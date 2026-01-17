@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Anggota Kelas</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+  <img 
+    src="assets/logo/logo-9asy-syathibi.png"
+    alt="9 Asy-Syathibi"
+    class="class-logo"
+  />
+
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <div class="nav-links" id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="members.html">Anggota</a>
+    <a href="gallery.html">Galeri</a>
+    <a href="news.html">Berita</a>
+  </div>
+</nav>
+
+<main>
+
+<section class="section">
+  <h2>Anggota Kelas</h2>
+  <div class="grid" id="memberGrid"></div>
+</section>
+
+<section class="section">
+  <h2>Struktur Kelas</h2>
+  <div class="grid" id="structureGrid"></div>
+</section>
+
+</main>
+
+<footer class="footer footer-class" onclick="goToLink('https://www.instagram.com/syathibi12.class/')">
+    <p>© 2025-2026 9 Asy-Syathibi</p>
+    <span>Akun Instagram Kelas</span>
+  </footer>
+  
+  <footer class="footer footer-creator" onclick="goToLink('https://www.instagram.com/theheptagonstudio/')">
+    <p>© Heptagon Studio</p>
+    <span>Akun Instagram Pembuat Website</span>
+  </footer>
+  
+
+<!-- MODAL PROFIL -->
+<div class="modal" id="profileModal">
+  <div class="modal-content">
+    <button class="close" onclick="closeModal()">×</button>
+    <div class="modal-header">
+      <img id="modalPhoto">
+      <h3 id="modalName"></h3>
+      <p class="muted" id="modalRole"></p>
+      <div class="tags" id="modalTags"></div>
+    </div>
+    <p id="modalDesc"></p>
+    <a id="modalInstagram" class="modal-instagram" target="_blank"></a>
+  </div>
+</div>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="data_storage/memberinfo.js"></script>
+<script src="data_storage/galeri.js"></script>
+<script src="data_storage/news.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

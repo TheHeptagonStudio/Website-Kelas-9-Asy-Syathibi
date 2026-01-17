@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Website Kelas 9 Asy-Syathibi</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+  <img 
+    src="assets/logo/logo-9asy-syathibi.png"
+    alt="9 Asy-Syathibi"
+    class="class-logo"
+  />
+
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <div class="nav-links" id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="members.html">Anggota</a>
+    <a href="gallery.html">Galeri</a>
+    <a href="news.html">Berita</a>
+  </div>
+</nav>
+
+
+
+
+<main>
+  <section class="section">
+    <h1>Selamat Datang di Website Kelas 9 Asy-Syahtibi</h1>
+    <p class="muted">
+      Arsip digital resmi kelas. Bukti bahwa kami pernah ada dan tidak sepenuhnya kacau.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Tentang Kelas</h2>
+    <p>
+      Kelas ini terdiri dari siswa dengan latar belakang, minat, dan tingkat kewarasan yang berbeda.
+      Dipersatukan oleh tugas, ujian, dan penderitaan kolektif.
+    </p>
+  </section>
+</main>
+
+<footer class="footer footer-class" onclick="goToLink('https://www.instagram.com/syathibi12.class/')">
+    <p>© 2025-2026 9 Asy-Syathibi</p>
+    <span>Akun Instagram Kelas</span>
+  </footer>
+  
+  <footer class="footer footer-creator" onclick="goToLink('https://www.instagram.com/theheptagonstudio/')">
+    <p>© Heptagon Studio</p>
+    <span>Akun Instagram Pembuat Website</span>
+  </footer>
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="data_storage/memberinfo.js"></script>
+  <script src="data_storage/galeri.js"></script>
+  <script src="data_storage/news.js"></script>
+  <script src="script.js"></script>
+  </body>
+  </html>
+  
